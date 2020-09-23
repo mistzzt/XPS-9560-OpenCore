@@ -1,11 +1,3 @@
-//
-// BackLight Fix Table
-// Rename In Config:
-// BRT6 to BRTX 
-// Find: 14204252 543602
-// Replace: 14204252 545802
-
-//
 // Dell XPS 15 9360 
 //
 // This SSDT contains a remapping of the BRT6 (brightness control) method.
