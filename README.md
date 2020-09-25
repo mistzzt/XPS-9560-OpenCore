@@ -27,3 +27,4 @@
 - [XPS15 9560 EFI by jardenliu and SilentSliver](https://github.com/jardenliu/XPS15-9560-Catalina/tree/OpenCore/)
 - [Post on fixing TBT on High Sierra](https://www.tonymacx86.com/threads/how-to-build-your-own-imac-pro-successful-build-extended-guide.229353/)
 - [SSDT for TBT Hotplug](https://www.tonymacx86.com/threads/in-progress-ssdt-for-thunderbolt-3-hotplug.248784/page-55)
+- [osy86's Hac-Mini](https://osy.gitbook.io/hac-mini-guide/)

@@ -8,14 +8,6 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-ADP1.aml</string>
-				<key>Path</key>
-				<string>SSDT-ADP1.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-BRT6.aml</string>
 				<key>Path</key>
 				<string>SSDT-BRT6.aml</string>
@@ -48,17 +40,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-MSNG.aml</string>
+				<string>SSDT-Missing.aml</string>
 				<key>Path</key>
-				<string>SSDT-MSNG.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-PLUG.aml</string>
-				<key>Path</key>
-				<string>SSDT-PLUG.aml</string>
+				<string>SSDT-Missing.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -72,9 +56,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-RMDC.aml</string>
+				<string>SSDT-Power.aml</string>
 				<key>Path</key>
-				<string>SSDT-RMDC.aml</string>
+				<string>SSDT-Power.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -83,14 +67,6 @@
 				<string>SSDT-SBUS-MCHC.aml</string>
 				<key>Path</key>
 				<string>SSDT-SBUS-MCHC.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-SLP5.aml</string>
-				<key>Path</key>
-				<string>SSDT-SLP5.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
