@@ -1433,7 +1433,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300</string>
+				<string>keepsyms=1 bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300 darkwake=1</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
