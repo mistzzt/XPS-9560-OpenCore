@@ -4,10 +4,12 @@
 
 | Variable                                 | Offset | Default         | Desired         | Comment |
 |------------------------------------------|--------|-----------------|-----------------|---------|
-| CFG Lock                                 | 0x4ED  | 0x01 (Enabled)  | 0x00 (Disabled) |         |
 | Above 4GB MMIO BIOS assignment           | 0x79A  | 0x00 (Disabled) | 0x01 (Enabled)  |         |
-| CSM Support                              | 0xFC8  | 0x01 (Enabled)  | 0x00 (Disabled) |         |
 | ACPI Removal Object Suppport             | 0x491  | 0x00 (Disabled) | 0x00            |         |
+| CFG Lock                                 | 0x4ED  | 0x01 (Enabled)  | 0x00 (Disabled) |         |
+| CSM Support                              | 0xFC8  | 0x01 (Enabled)  | 0x00 (Disabled) |         |
+| DVMT Pre-Allocated                       | 0x795  | 0x02 (64M)      | 0x02 (64M)      |         |
+| DVMT Total Gfx Memory                    | 0x796  | 0x02 (256M)     | 0x03 (MAX)      |         |
 | GPIO filter                              | 0x47B  | 0x00            | 0x01            |         |
 | GPIO3 Force Pwr                          | 0x45F  | N/A             | 0x01            |         |
 | Native OS Hot Plug                       | 0x479  | N/A             | 0x01            |         |

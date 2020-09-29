@@ -78,6 +78,14 @@
 				<key>Enabled</key>
 				<true/>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-UsbTypeC.aml</string>
+				<key>Path</key>
+				<string>SSDT-UsbTypeC.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -254,6 +262,44 @@
 				<key>TableSignature</key>
 				<data>RFNEVA==</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Rename XTBT to YTBT and use with SSDT-YTBT.aml for USB-C hot plug</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>pABYVEJU</data>
+				<key>Replace</key>
+				<data>pABZVEJU</data>
+				<key>TableSignature</key>
+				<data>RFNEVA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>_RMV to XRMV in RP15.PXSX (USB-C Hotplug Fix with SSDT-TYPC.aml)</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X1JNVgCgFpCTVEJUUwGTU0JOUlRCVVOkVEFSU6EGpEhQQ0UULUhQTUUIoCaQkpNWRElEDP////+TUE1TWAGGUFhTWAoCcAFQTVNYcAFQU1BYFCpfSU5JAHBMVFIxTFRSWnBQTUwxTE1TTHBQTkwxTE5TTHBPQkYxT0JGWhQPX1BSVwCkR1BSVwppCgQUFl9QUlQAoApQSUNNpEFSMTKkUFIxMluCRztSUDE2</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WFJNVgCgFpCTVEJUUwGTU0JOUlRCVVOkVEFSU6EGpEhQQ0UULUhQTUUIoCaQkpNWRElEDP////+TUE1TWAGGUFhTWAoCcAFQTVNYcAFQU1BYFCpfSU5JAHBMVFIxTFRSWnBQTUwxTE1TTHBQTkwxTE5TTHBPQkYxT0JGWhQPX1BSVwCkR1BSVwppCgQUFl9QUlQAoApQSUNNpEFSMTKkUFIxMluCRztSUDE2</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>RFNEVA==</data>
+			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
@@ -401,8 +447,6 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>/////w==</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
 			<dict>
