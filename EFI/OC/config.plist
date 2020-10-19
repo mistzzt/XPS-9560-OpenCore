@@ -369,50 +369,28 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
-				<key>#AAPL00,override-no-connect</key>
-				<data>AP///////wBNEI0UwCyJ1QUcAQSlIhN4Dt8ZqVM0vCUMUVQAAAABAQEBAQEBAQEBAQEBAQEBTdAAoPBwPoAwIDUAWMIQAAAapqYAoPBwPoAwIDUAWMIQAAAYAAAA/QA4TB5TEQAKICAgICAgAAAA/ABDb2xvciBMQ0QKICAgAK8=</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>AAAbWQ==</data>
 				<key>device-id</key>
 				<data>G1kAAA==</data>
-				<key>enable-hdmi-dividers-fix</key>
-				<data>AQAAAA==</data>
-				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
-				<key>enable-lspcon-support</key>
-				<data>AQAAAA==</data>
-				<key>force-online</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con0-busid</key>
-				<data>BAAAAA==</data>
-				<key>framebuffer-con0-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con0-pipe</key>
-				<data>IAAAAA==</data>
-				<key>framebuffer-con1-busid</key>
-				<data>BQAAAA==</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-has-lspcon</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-index</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-pipe</key>
-				<data>EgAAAA==</data>
-				<key>framebuffer-con1-preferred-lspcon-mode</key>
-				<data>AAAAAA==</data>
-				<key>framebuffer-con2-busid</key>
-				<data>BgAAAA==</data>
-				<key>framebuffer-con2-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con2-index</key>
-				<data>AgAAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AAAAAw==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-unifiedmem</key>
-				<data>/////w==</data>
+				<data>AAAAgA==</data>
+				<key>enable-hdmi-dividers-fix</key>
+				<data>AQAAAA==</data>
+				<key>enable-lspcon-support</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-has-lspcon</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-preferred-lspcon-mode</key>
+				<data>AQAAAA==</data>
+				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-alldata</key>
+				<data>AQUKAAAIAACHAQAAAwYKAAAEAACHAQAA/wAAAAEAAAAgAAAA</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
 			<dict>
@@ -1451,7 +1429,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 darkwake=1 -disablegfxfirmware bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300</string>
+				<string>keepsyms=1 agdpmod=vit9696 darkwake=1 bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
