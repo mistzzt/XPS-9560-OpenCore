@@ -3,6 +3,7 @@
 DefinitionBlock ("", "SSDT", 2, "DXPS", "PwrMgt", 0)
 {
     External (_SB_.AC__, DeviceObj)
+    External (_SB_.PCI0.LPCB.ECDV, DeviceObj)
     External (_PR_.CPU0, ProcessorObj)
 
     External (_SB_.PCI0.PEG0.PEGP._OFF, MethodObj)
@@ -43,6 +44,16 @@ DefinitionBlock ("", "SSDT", 2, "DXPS", "PwrMgt", 0)
                 0x18, 
                 3
             })
+        }
+
+        // https://bugzilla.kernel.org/show_bug.cgi?id=109511
+        Device (_SB.PCI0.LPCB.ECDV.CHRG)
+        {
+            Name (_HID, "DELLBBB1")  // _HID: Hardware ID
+            Method (_STA, 0)  // _STA: Status
+            {
+                Return (0x0F)
+            }
         }
 
         // Power Management Interface for NVIDIA dGPU
