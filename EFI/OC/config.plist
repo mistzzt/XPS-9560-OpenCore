@@ -1461,13 +1461,13 @@
 		<array>
 			<dict>
 				<key>Name</key>
-				<string>modGRUBShell.efi</string>
+				<string>ControlMsrE2.efi</string>
 				<key>Comment</key>
-				<string>modGRUBShell.efi</string>
+				<string>ControlMsrE2.efi</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
-				<string>modGRUBShell.efi</string>
+				<string>ControlMsrE2.efi</string>
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
@@ -1479,13 +1479,13 @@
 			</dict>
 			<dict>
 				<key>Name</key>
-				<string>VerifyMsrE2.efi</string>
+				<string>modGRUBShell.efi</string>
 				<key>Comment</key>
-				<string>VerifyMsrE2.efi</string>
+				<string>modGRUBShell.efi</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
-				<string>VerifyMsrE2.efi</string>
+				<string>modGRUBShell.efi</string>
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
@@ -1609,6 +1609,21 @@
 			<key>MinVersion</key>
 			<integer>0</integer>
 		</dict>
+		<key>AppleInput</key>
+		<dict>
+			<key>AppleEvent</key>
+			<string>Builtin</string>
+			<key>CustomDelays</key>
+			<false/>
+			<key>KeyInitialDelay</key>
+			<integer>50</integer>
+			<key>KeySubsequentDelay</key>
+			<integer>5</integer>
+			<key>PointerSpeedDiv</key>
+			<integer>1</integer>
+			<key>PointerSpeedMul</key>
+			<integer>1</integer>
+		</dict>
 		<key>Audio</key>
 		<dict>
 			<key>AudioCodec</key>
@@ -1694,8 +1709,6 @@
 			<false/>
 			<key>AppleDebugLog</key>
 			<false/>
-			<key>AppleEvent</key>
-			<false/>
 			<key>AppleFramebufferInfo</key>
 			<false/>
 			<key>AppleImageConversion</key>
@@ -1733,10 +1746,14 @@
 			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
+			<key>ForgeUefiSupport</key>
+			<false/>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
 			<true/>
+			<key>ReloadOptionRoms</key>
+			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
 			<key>TscSyncTimeout</key>
