@@ -1178,7 +1178,7 @@ Offset:		Instruction:
 0x2E675 				QuestionId: 0x10E equals value 0x0 {12 06 0E 01 00 00}
 0x2E67B 				Or {16 02}
 0x2E67D 			End {29 02}
-0x2E67F 			String: Owner Epoch, VarStoreInfo (VarOffset/VarName): 0x122A, VarStore: 0x1, QuestionId: 0x9A, MinSize: 0x , MaxSize: 0x  {1C 90 56 03 57 03 9A 00 01 00 2A 12 00 20 20 00}
+0x2E67F 			String: Owner Epoch, VarStoreInfo (VarOffset/VarName): 0x122A, VarStore: 0x1, QuestionId: 0x9A, MinSize: 0x20, MaxSize: 0x20 {1C 90 56 03 57 03 9A 00 01 00 2A 12 00 20 20 00}
 0x2E68F 			End {29 02}
 0x2E691 			Guid: [A5D58BCF-EB5C-44FC-9122-CA4369B9ABE6] {5F 27 CF 8B D5 A5 5C EB FC 44 91 22 CA 43 69 B9 AB E6 1D E0 CE 7A 41 A9 6F 82 4A 99 D7 F9 B1 DD 27 1E 48 C9 06 00 00}
 0x2E6B8 			Guid: [A5D58BCF-EB5C-44FC-9122-CA4369B9ABE6] {5F 17 CF 8B D5 A5 5C EB FC 44 91 22 CA 43 69 B9 AB E6 12 45 00 00 00}
@@ -1648,7 +1648,7 @@ Offset:		Instruction:
 0x2F566 				QuestionId: 0xE48 equals value 0x1 {12 06 48 0E 01 00}
 0x2F56C 				Or {16 02}
 0x2F56E 			End {29 02}
-0x2F570 			String: Service Tag, VarStoreInfo (VarOffset/VarName): 0xFED, VarStore: 0x1, QuestionId: 0xD020, MinSize: 0x , MaxSize: 0x {1C 90 8D 17 8E 17 20 D0 01 00 ED 0F 04 00 07 00}
+0x2F570 			String: Service Tag, VarStoreInfo (VarOffset/VarName): 0xFED, VarStore: 0x1, QuestionId: 0xD020, MinSize: 0x0, MaxSize: 0x7 {1C 90 8D 17 8E 17 20 D0 01 00 ED 0F 04 00 07 00}
 0x2F580 			End {29 02}
 0x2F582 			Guid: [A5D58BCF-EB5C-44FC-9122-CA4369B9ABE6] {5F 17 CF 8B D5 A5 5C EB FC 44 91 22 CA 43 69 B9 AB E6 12 0A 00 00 00}
 0x2F599 		End If {29 02}
@@ -1663,7 +1663,7 @@ Offset:		Instruction:
 0x2F5BD 				QuestionId: 0xE47 equals value 0x1 {12 06 47 0E 01 00}
 0x2F5C3 				Or {16 02}
 0x2F5C5 			End {29 02}
-0x2F5C7 			String: Asset Tag, VarStoreInfo (VarOffset/VarName): 0x100B, VarStore: 0x1, QuestionId: 0xD021, MinSize: 0x , MaxSize: 0x {1C 90 91 17 92 17 21 D0 01 00 0B 10 04 00 0C 00}
+0x2F5C7 			String: Asset Tag, VarStoreInfo (VarOffset/VarName): 0x100B, VarStore: 0x1, QuestionId: 0xD021, MinSize: 0x0, MaxSize: 0xC {1C 90 91 17 92 17 21 D0 01 00 0B 10 04 00 0C 00}
 0x2F5D7 			End {29 02}
 0x2F5D9 			Guid: [A5D58BCF-EB5C-44FC-9122-CA4369B9ABE6] {5F 17 CF 8B D5 A5 5C EB FC 44 91 22 CA 43 69 B9 AB E6 12 0B 00 00 00}
 0x2F5F0 		End If {29 02}
@@ -20576,21 +20576,21 @@ A different Owner Epoch will result in the failure to decrypt files sealed in a 
 0x4F290 		End {29 02}
 0x4F292 		Suppress If {0A 82}
 0x4F294 			QuestionId: 0xB02 equals value 0x0 {12 06 02 0B 00 00}
-0x4F29A 			String: 'Alpha' GUID:, VarStoreInfo (VarOffset/VarName): 0xD9B, VarStore: 0x1, QuestionId: 0xB03, MinSize: 0x$, MaxSize: 0x$ {1C 90 EB 07 F0 07 03 0B 01 00 9B 0D 10 24 24 00}
+0x4F29A 			String: 'Alpha' GUID:, VarStoreInfo (VarOffset/VarName): 0xD9B, VarStore: 0x1, QuestionId: 0xB03, MinSize: 0x24, MaxSize: 0x24 {1C 90 EB 07 F0 07 03 0B 01 00 9B 0D 10 24 24 00}
 0x4F2AA 			End {29 02}
 0x4F2AC 		End If {29 02}
 0x4F2AE 		Checkbox: Custom Module 'Beta', VarStoreInfo (VarOffset/VarName): 0xD99, VarStore: 0x1, QuestionId: 0xB04 {06 8E EC 07 D8 07 04 0B 01 00 99 0D 10 00}
 0x4F2BC 		End {29 02}
 0x4F2BE 		Suppress If {0A 82}
 0x4F2C0 			QuestionId: 0xB04 equals value 0x0 {12 06 04 0B 00 00}
-0x4F2C6 			String: 'Beta' GUID:, VarStoreInfo (VarOffset/VarName): 0xDE5, VarStore: 0x1, QuestionId: 0xB05, MinSize: 0x$, MaxSize: 0x$ {1C 90 ED 07 F0 07 05 0B 01 00 E5 0D 10 24 24 00}
+0x4F2C6 			String: 'Beta' GUID:, VarStoreInfo (VarOffset/VarName): 0xDE5, VarStore: 0x1, QuestionId: 0xB05, MinSize: 0x24, MaxSize: 0x24 {1C 90 ED 07 F0 07 05 0B 01 00 E5 0D 10 24 24 00}
 0x4F2D6 			End {29 02}
 0x4F2D8 		End If {29 02}
 0x4F2DA 		Checkbox: Custom Module 'Gamma', VarStoreInfo (VarOffset/VarName): 0xD9A, VarStore: 0x1, QuestionId: 0xB06 {06 8E EE 07 D8 07 06 0B 01 00 9A 0D 10 00}
 0x4F2E8 		End {29 02}
 0x4F2EA 		Suppress If {0A 82}
 0x4F2EC 			QuestionId: 0xB06 equals value 0x0 {12 06 06 0B 00 00}
-0x4F2F2 			String: 'Gamma' GUID:, VarStoreInfo (VarOffset/VarName): 0xE2F, VarStore: 0x1, QuestionId: 0xB07, MinSize: 0x$, MaxSize: 0x$ {1C 90 EF 07 F0 07 07 0B 01 00 2F 0E 10 24 24 00}
+0x4F2F2 			String: 'Gamma' GUID:, VarStoreInfo (VarOffset/VarName): 0xE2F, VarStore: 0x1, QuestionId: 0xB07, MinSize: 0x24, MaxSize: 0x24 {1C 90 EF 07 F0 07 07 0B 01 00 2F 0E 10 24 24 00}
 0x4F302 			End {29 02}
 0x4F304 		End If {29 02}
 0x4F306 	End Form {29 02}
@@ -21620,7 +21620,7 @@ A different Owner Epoch will result in the failure to decrypt files sealed in a 
 0x50D93 			QuestionId: 0xBB5 equals value 0xFF {12 86 B5 0B FF 00}
 0x50D99 				Not {17 02}
 0x50D9B 			End {29 02}
-0x50D9D 			String: Custom HID, VarStoreInfo (VarOffset/VarName): 0xC6, VarStore: 0x1, QuestionId: 0xBB6, MinSize: 0x, MaxSize: 0x {1C 90 6C 0E 6C 0E B6 0B 01 00 C6 00 00 06 08 00}
+0x50D9D 			String: Custom HID, VarStoreInfo (VarOffset/VarName): 0xC6, VarStore: 0x1, QuestionId: 0xBB6, MinSize: 0x6, MaxSize: 0x8 {1C 90 6C 0E 6C 0E B6 0B 01 00 C6 00 00 06 08 00}
 0x50DAD 			End {29 02}
 0x50DAF 		End If {29 02}
 0x50DB1 		One Of: Lanes Clock division, VarStoreInfo (VarOffset/VarName): 0x58, VarStore: 0x1, QuestionId: 0xBB7, Size: 1, Min: 0x0, Max 0x7, Step: 0x0 {05 91 47 0D 46 0D B7 0B 01 00 58 00 10 10 00 07 00}
@@ -21700,7 +21700,7 @@ A different Owner Epoch will result in the failure to decrypt files sealed in a 
 0x50F93 		End If {29 02}
 0x50F95 		Gray Out If {19 82}
 0x50F97 			QuestionId: 0xD70 equals value 0x20 {12 06 70 0D 20 00}
-0x50F9D 			String: Camera module name, VarStoreInfo (VarOffset/VarName): 0xD9, VarStore: 0x1, QuestionId: 0xBC0, MinSize: 0x, MaxSize: 0x {1C 90 F3 0D F3 0D C0 0B 01 00 D9 00 00 01 0F 00}
+0x50F9D 			String: Camera module name, VarStoreInfo (VarOffset/VarName): 0xD9, VarStore: 0x1, QuestionId: 0xBC0, MinSize: 0x1, MaxSize: 0xF {1C 90 F3 0D F3 0D C0 0B 01 00 D9 00 00 01 0F 00}
 0x50FAD 			End {29 02}
 0x50FAF 		End If {29 02}
 0x50FB1 		One Of: LaneUsed, VarStoreInfo (VarOffset/VarName): 0x121, VarStore: 0x1, QuestionId: 0xBC1, Size: 1, Min: 0x1, Max 0x8, Step: 0x0 {05 91 2E 0E 2D 0E C1 0B 01 00 21 01 10 10 01 08 00}
@@ -22039,7 +22039,7 @@ A different Owner Epoch will result in the failure to decrypt files sealed in a 
 0x51966 			QuestionId: 0xBDF equals value 0xFF {12 86 DF 0B FF 00}
 0x5196C 				Not {17 02}
 0x5196E 			End {29 02}
-0x51970 			String: Custom HID, VarStoreInfo (VarOffset/VarName): 0x130, VarStore: 0x1, QuestionId: 0xBE0, MinSize: 0x, MaxSize: 0x {1C 90 6C 0E 6C 0E E0 0B 01 00 30 01 00 06 08 00}
+0x51970 			String: Custom HID, VarStoreInfo (VarOffset/VarName): 0x130, VarStore: 0x1, QuestionId: 0xBE0, MinSize: 0x6, MaxSize: 0x8 {1C 90 6C 0E 6C 0E E0 0B 01 00 30 01 00 06 08 00}
 0x51980 			End {29 02}
 0x51982 		End If {29 02}
 0x51984 		One Of: Lanes Clock division, VarStoreInfo (VarOffset/VarName): 0x58, VarStore: 0x1, QuestionId: 0xBE1, Size: 1, Min: 0x0, Max 0x7, Step: 0x0 {05 91 47 0D 46 0D E1 0B 01 00 58 00 10 10 00 07 00}
@@ -22117,7 +22117,7 @@ A different Owner Epoch will result in the failure to decrypt files sealed in a 
 0x51B5D 				One Of Option: 2 voltage rail, Value (8 bit): 0x1 {09 07 20 0E 00 00 01}
 0x51B64 			End One Of {29 02}
 0x51B66 		End If {29 02}
-0x51B68 		String: Camera module name, VarStoreInfo (VarOffset/VarName): 0x143, VarStore: 0x1, QuestionId: 0xBEA, MinSize: 0x, MaxSize: 0x {1C 90 F3 0D F3 0D EA 0B 01 00 43 01 00 01 0F 00}
+0x51B68 		String: Camera module name, VarStoreInfo (VarOffset/VarName): 0x143, VarStore: 0x1, QuestionId: 0xBEA, MinSize: 0x1, MaxSize: 0xF {1C 90 F3 0D F3 0D EA 0B 01 00 43 01 00 01 0F 00}
 0x51B78 		End {29 02}
 0x51B7A 		One Of: LaneUsed, VarStoreInfo (VarOffset/VarName): 0x18B, VarStore: 0x1, QuestionId: 0xBEB, Size: 1, Min: 0x1, Max 0x4, Step: 0x0 {05 91 2F 0E 2D 0E EB 0B 01 00 8B 01 10 10 01 04 00}
 0x51B8B 			One Of Option: x1, Value (8 bit): 0x1 {09 07 57 0E 00 00 01}
@@ -22454,7 +22454,7 @@ A different Owner Epoch will result in the failure to decrypt files sealed in a 
 0x52528 			QuestionId: 0xC09 equals value 0xFF {12 86 09 0C FF 00}
 0x5252E 				Not {17 02}
 0x52530 			End {29 02}
-0x52532 			String: Custom HID, VarStoreInfo (VarOffset/VarName): 0x19A, VarStore: 0x1, QuestionId: 0xC0A, MinSize: 0x, MaxSize: 0x {1C 90 6C 0E 6C 0E 0A 0C 01 00 9A 01 00 06 08 00}
+0x52532 			String: Custom HID, VarStoreInfo (VarOffset/VarName): 0x19A, VarStore: 0x1, QuestionId: 0xC0A, MinSize: 0x6, MaxSize: 0x8 {1C 90 6C 0E 6C 0E 0A 0C 01 00 9A 01 00 06 08 00}
 0x52542 			End {29 02}
 0x52544 		End If {29 02}
 0x52546 		One Of: Lanes Clock division, VarStoreInfo (VarOffset/VarName): 0x58, VarStore: 0x1, QuestionId: 0xC0B, Size: 1, Min: 0x0, Max 0x7, Step: 0x0 {05 91 47 0D 46 0D 0B 0C 01 00 58 00 10 10 00 07 00}
@@ -22532,7 +22532,7 @@ A different Owner Epoch will result in the failure to decrypt files sealed in a 
 0x5271F 				One Of Option: 2 voltage rail, Value (8 bit): 0x1 {09 07 20 0E 00 00 01}
 0x52726 			End One Of {29 02}
 0x52728 		End If {29 02}
-0x5272A 		String: Camera module name, VarStoreInfo (VarOffset/VarName): 0x1AD, VarStore: 0x1, QuestionId: 0xC14, MinSize: 0x, MaxSize: 0x {1C 90 F3 0D F3 0D 14 0C 01 00 AD 01 00 01 0F 00}
+0x5272A 		String: Camera module name, VarStoreInfo (VarOffset/VarName): 0x1AD, VarStore: 0x1, QuestionId: 0xC14, MinSize: 0x1, MaxSize: 0xF {1C 90 F3 0D F3 0D 14 0C 01 00 AD 01 00 01 0F 00}
 0x5273A 		End {29 02}
 0x5273C 		One Of: LaneUsed, VarStoreInfo (VarOffset/VarName): 0x1F5, VarStore: 0x1, QuestionId: 0xC15, Size: 1, Min: 0x1, Max 0x4, Step: 0x0 {05 91 30 0E 2D 0E 15 0C 01 00 F5 01 10 10 01 04 00}
 0x5274D 			One Of Option: x1, Value (8 bit): 0x1 {09 07 57 0E 00 00 01}
@@ -22869,7 +22869,7 @@ A different Owner Epoch will result in the failure to decrypt files sealed in a 
 0x530EA 			QuestionId: 0xC33 equals value 0xFF {12 86 33 0C FF 00}
 0x530F0 				Not {17 02}
 0x530F2 			End {29 02}
-0x530F4 			String: Custom HID, VarStoreInfo (VarOffset/VarName): 0x204, VarStore: 0x1, QuestionId: 0xC34, MinSize: 0x, MaxSize: 0x {1C 90 6C 0E 6C 0E 34 0C 01 00 04 02 00 06 08 00}
+0x530F4 			String: Custom HID, VarStoreInfo (VarOffset/VarName): 0x204, VarStore: 0x1, QuestionId: 0xC34, MinSize: 0x6, MaxSize: 0x8 {1C 90 6C 0E 6C 0E 34 0C 01 00 04 02 00 06 08 00}
 0x53104 			End {29 02}
 0x53106 		End If {29 02}
 0x53108 		One Of: Lanes Clock division, VarStoreInfo (VarOffset/VarName): 0x58, VarStore: 0x1, QuestionId: 0xC35, Size: 1, Min: 0x0, Max 0x7, Step: 0x0 {05 91 47 0D 46 0D 35 0C 01 00 58 00 10 10 00 07 00}
@@ -22947,7 +22947,7 @@ A different Owner Epoch will result in the failure to decrypt files sealed in a 
 0x532E1 				One Of Option: 2 voltage rail, Value (8 bit): 0x1 {09 07 20 0E 00 00 01}
 0x532E8 			End One Of {29 02}
 0x532EA 		End If {29 02}
-0x532EC 		String: Camera module name, VarStoreInfo (VarOffset/VarName): 0x217, VarStore: 0x1, QuestionId: 0xC3E, MinSize: 0x, MaxSize: 0x {1C 90 F3 0D F3 0D 3E 0C 01 00 17 02 00 01 0F 00}
+0x532EC 		String: Camera module name, VarStoreInfo (VarOffset/VarName): 0x217, VarStore: 0x1, QuestionId: 0xC3E, MinSize: 0x1, MaxSize: 0xF {1C 90 F3 0D F3 0D 3E 0C 01 00 17 02 00 01 0F 00}
 0x532FC 		End {29 02}
 0x532FE 		One Of: LaneUsed, VarStoreInfo (VarOffset/VarName): 0x25F, VarStore: 0x1, QuestionId: 0xC3F, Size: 1, Min: 0x1, Max 0x4, Step: 0x0 {05 91 31 0E 2D 0E 3F 0C 01 00 5F 02 10 10 01 04 00}
 0x5330F 			One Of Option: x1, Value (8 bit): 0x1 {09 07 57 0E 00 00 01}
@@ -24894,7 +24894,7 @@ A different Owner Epoch will result in the failure to decrypt files sealed in a 
 0x56789 		End {29 02}
 0x5678B 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 02 00 00 00 00}
 0x56792 		End {29 02}
-0x56794 		String: Add boot option, VarStoreInfo (VarOffset/VarName): 0x0, VarStore: 0xA, QuestionId: 0xD51, MinSize: 0x, MaxSize: 0x {1C 90 36 00 37 00 51 0D 0A 00 00 00 00 03 14 00}
+0x56794 		String: Add boot option, VarStoreInfo (VarOffset/VarName): 0x0, VarStore: 0xA, QuestionId: 0xD51, MinSize: 0x3, MaxSize: 0x14 {1C 90 36 00 37 00 51 0D 0A 00 00 00 00 03 14 00}
 0x567A4 		End {29 02}
 0x567A6 		Suppress If {0A 82}
 0x567A8 			QuestionId: 0xD63 equals value 0xC {12 06 63 0D 0C 00}
@@ -24902,7 +24902,7 @@ A different Owner Epoch will result in the failure to decrypt files sealed in a 
 0x567BD 		End If {29 02}
 0x567BF 		Gray Out If {19 82}
 0x567C1 			QuestionId: 0xD65 equals QuestionId 0xD65 {13 06 65 0D 65 0D}
-0x567C7 			String: Boot option File Path, VarStoreInfo (VarOffset/VarName): 0x2C, VarStore: 0xA, QuestionId: 0xD53, MinSize: 0x , MaxSize: 0xx {1C 90 18 15 19 15 53 0D 0A 00 2C 00 00 00 78 00}
+0x567C7 			String: Boot option File Path, VarStoreInfo (VarOffset/VarName): 0x2C, VarStore: 0xA, QuestionId: 0xD53, MinSize: 0x0, MaxSize: 0x78 {1C 90 18 15 19 15 53 0D 0A 00 2C 00 00 00 78 00}
 0x567D7 			End {29 02}
 0x567D9 		End If {29 02}
 0x567DB 		Suppress If {0A 82}
